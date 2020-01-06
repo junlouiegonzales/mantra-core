@@ -1,6 +1,6 @@
 import {
   useDeps as _useDeps
-} from 'react-simple-di';
+} from 'biz-react-simple-di';
 
 import {
   compose as _compose,
@@ -9,7 +9,7 @@ import {
   composeWithObservable as _composeWithObservable,
   composeAll as _composeAll,
   disable as _disable,
-} from 'react-komposer';
+} from 'biz-react-komposer';
 
 import App from './app';
 

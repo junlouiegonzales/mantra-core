@@ -6,7 +6,7 @@ Core API for Mantra.
 
 This repo contains the core APP api where we create an mantra app and initialize it.
 
-Also, this package contains exported functions from both [`react-komposer`](https://github.com/kadirahq/react-komposer) and [`react-simple-di`](https://github.com/kadirahq/react-simple-di).
+Also, this package contains exported functions from both [`react-komposer`](https://github.com/kadirahq/react-komposer) and [`biz-react-simple-di`](https://github.com/junlouiegonzales/react-simple-di.git).
 That's purely for the ease of use.
 
 ### Installation

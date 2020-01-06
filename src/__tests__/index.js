@@ -1,8 +1,8 @@
 import {expect} from 'chai';
 import {createApp} from '../';
 import * as indexExports from '../';
-import * as simpleSimpleDiExports from 'react-simple-di';
-import * as reactKomposerExports from 'react-komposer';
+import * as simpleSimpleDiExports from 'biz-react-simple-di';
+import * as reactKomposerExports from 'biz-react-komposer';
 const {describe, it} = global;
 
 describe('Module', () => {
