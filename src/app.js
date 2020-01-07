@@ -75,6 +75,10 @@ export default class App {
     module.__loaded = true;
   }
 
+  injectDeps(comp) {
+    return injectDeps(this.context, this.actions)(comp);
+  }
+
   init() {
     this._checkForInit();
 

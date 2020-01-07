@@ -11,10 +11,18 @@ import {
   disable as _disable,
 } from 'biz-react-komposer';
 
+let app;
 import App from './app';
 
 // export this module's functions
-export const createApp = (...args) => (new App(...args));
+export const createApp = (...args) => {
+  app = new App(...args);
+  return app;
+};
+
+export const injectDeps = (...args) => {
+  return app.injectDeps(...args);
+};
 
 // export react-simple-di functions
 export const useDeps = _useDeps;
