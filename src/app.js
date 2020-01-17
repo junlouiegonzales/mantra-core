@@ -33,6 +33,10 @@ export default class App {
     return actions;
   }
 
+  loadConfig(func) {
+    return func();
+  }
+
   loadModule(module) {
     this._checkForInit();
 
@@ -72,11 +76,16 @@ export default class App {
       module.load(this.context, boundedActions);
     }
 
-    module.__loaded = true;
-  }
+    if (module.root) {
+      if (typeof module.root !== 'function') {
+        const message = `Module's root field should be a function.`;
+        throw new Error(message);
+      }
 
-  injectDeps(comp) {
-    return injectDeps(this.context, this.actions)(comp);
+      this._routeFns.push(module.root);
+    }
+
+    module.__loaded = true;
   }
 
   init() {

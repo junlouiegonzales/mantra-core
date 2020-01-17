@@ -1,6 +1,6 @@
 {
   "name": "biz-mantra-core",
-  "version": "1.7.5",
+  "version": "1.7.6",
   "description": "Core API for Mantra (React 16)",
   "repository": {
     "type": "git",
